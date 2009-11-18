@@ -1,11 +1,13 @@
 Source: python-lzma
 Section: python
 Priority: extra
-Maintainer: Richard Darst <rkd@zgib.net>
+Maintainer: Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
 Build-Depends: debhelper (>= 7.0.50~), liblzma-dev, python2.6-dev, python-setuptools, pkg-config, python-support
 Standards-Version: 3.8.3
 XS-Python-Version: >= 2.6
 Homepage: https://launchpad.net/pyliblzma
+Vcs-Svn: svn://svn.debian.org/python-modules/packages/python-lzma/trunk
+Vcs-Browser: http://svn.debian.org/viewsvn/python-modules/packages/python-lzma/trunk
 
 Package: python-lzma
 Architecture: any
