@@ -1,7 +1,8 @@
 Source: python-lzma
 Section: python
-Priority: extra
+Priority: optional
 Maintainer: Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Uploaders: Richard Darst <rkd@zgib.net>
 Build-Depends: debhelper (>= 7.0.50~), liblzma-dev, python2.6-dev, python-setuptools, pkg-config, python-support
 Standards-Version: 3.8.3
 XS-Python-Version: >= 2.6
@@ -14,6 +15,6 @@ Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, ${python:Depends}, liblzma0
 Provides: ${python:Provides}
 Description: Python bindings for liblzma
- PylibLZMA provides a Python interface for the liblzma library to read
- and write data that has been compressed or can be decompressed by
- Lasse Collin's xz / lzma utils.
+ PylibLZMA provides a Python interface for the liblzma library for
+ reading and writing data that has been compressed or can be
+ decompressed by Lasse Collin's xz / lzma utils.

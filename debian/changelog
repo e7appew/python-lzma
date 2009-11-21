@@ -1,4 +1,4 @@
-python-lzma (0.5.2-1) unstable; urgency=low
+python-lzma (0.5.2-1) experimental; urgency=low
 
   * Initial release
 
