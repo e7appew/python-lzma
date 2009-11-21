@@ -11,10 +11,9 @@ Upstream Author:
 
 Copyright:
 
-    Copyright (c) 2008 Per Øyvind Karlsen <peroyvind@mandriva.org>
+    Copyright (c) 2008  Øyvind Karlsen <peroyvind@mandriva.org>
     liblzma Copyright (C) 2007-2008  Lasse Collin
-    LZMA SDK Copyright (C) 1999-2007 Igor Pavlov
-    <likewise for another author>
+    LZMA SDK Copyright (C) 1999-2007  Igor Pavlov
 
 License:
 
@@ -27,3 +26,20 @@ The Debian packaging is:
 
 and is licensed under the GPL version 3, 
 see `/usr/share/common-licenses/GPL-3'.
+
+--
+
+Name: PylibLZMA
+Maintainer: Øyvind Karlsen <peroyvind@mandriva.org>
+Source: http://pypi.python.org/pypi/pyliblzma
+        https://launchpad.net/pyliblzma
+
+Copyright: 2009 Øyvind Karlsen <peroyvind@mandriva.org>
+License: LGPL-3+
+ On Debian systems the full text of the GNU General Public
+ License can be found in the `/usr/share/common-licenses/GPL-3'
+ file.
+
+Files: debian/*
+Copyright: 2009, Richard Darst <rkd@zgib.net>
+License: LGPL-3+
