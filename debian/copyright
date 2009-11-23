@@ -1,45 +1,18 @@
-This work was packaged for Debian by:
-
-    Richard Darst <rkd@zgib.net> on Sun, 15 Nov 2009 17:01:44 -0500
-
-It was downloaded from http://pypi.python.org/pypi/pyliblzma
-                       https://launchpad.net/pyliblzma
-
-Upstream Author:
-
-    Øyvind Karlsen <peroyvind@mandriva.org>
-
-Copyright:
-
-    Copyright (c) 2008  Øyvind Karlsen <peroyvind@mandriva.org>
-    liblzma Copyright (C) 2007-2008  Lasse Collin
-    LZMA SDK Copyright (C) 1999-2007  Igor Pavlov
-
-License:
-
-    GNU Lesser Public Lisence version 3, 
-    see `/usr/share/common-licenses/LGPL-3'.
-
-The Debian packaging is:
-
-    Copyright (C) 2009 Richard Darst <rkd@zgib.net>
-
-and is licensed under the LGPL version 3, 
-see `/usr/share/common-licenses/LGPL-3'.
-
---
-
 Name: PylibLZMA
-Maintainer: Øyvind Karlsen <peroyvind@mandriva.org>
+Maintainer: Per Øyvind Karlsen <peroyvind@mandriva.org>
 Source: http://pypi.python.org/pypi/pyliblzma
         https://launchpad.net/pyliblzma
+Format-Specification: http://svn.debian.org/wsvn/dep/web/deps/dep5.mdwn?op=file&rev=59
 
-Copyright: 2009 Øyvind Karlsen <peroyvind@mandriva.org>
+Files: *
+Copyright: 2009, Per Øyvind Karlsen <peroyvind@mandriva.org>
 License: LGPL-3+
- On Debian systems the full text of the GNU General Public
- License can be found in the `/usr/share/common-licenses/LGPL-3'
- file.
 
 Files: debian/*
 Copyright: 2009, Richard Darst <rkd@zgib.net>
 License: LGPL-3+
+
+License: LGPL-3+
+ On Debian systems the full text of the GNU General Public
+ License can be found in the `/usr/share/common-licenses/LGPL-3'
+ file.
