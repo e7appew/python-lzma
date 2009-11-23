@@ -17,15 +17,15 @@ Copyright:
 
 License:
 
-    GPL version 3, 
-    see `/usr/share/common-licenses/GPL-3'.
+    GNU Lesser Public Lisence version 3, 
+    see `/usr/share/common-licenses/LGPL-3'.
 
 The Debian packaging is:
 
     Copyright (C) 2009 Richard Darst <rkd@zgib.net>
 
-and is licensed under the GPL version 3, 
-see `/usr/share/common-licenses/GPL-3'.
+and is licensed under the LGPL version 3, 
+see `/usr/share/common-licenses/LGPL-3'.
 
 --
 
@@ -37,7 +37,7 @@ Source: http://pypi.python.org/pypi/pyliblzma
 Copyright: 2009 Øyvind Karlsen <peroyvind@mandriva.org>
 License: LGPL-3+
  On Debian systems the full text of the GNU General Public
- License can be found in the `/usr/share/common-licenses/GPL-3'
+ License can be found in the `/usr/share/common-licenses/LGPL-3'
  file.
 
 Files: debian/*

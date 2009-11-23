@@ -16,20 +16,13 @@ clean:
 	rm -f  lzma.so
 	dh clean
 
-override_dh_auto_build:
-	dh_auto_build
-	for i in $(PYVERS); do \
-	  python$$i setup.py test; \
-	done
 
-override_dh_auto_install:
-	for i in $(PYVERS); do \
-	  python$$i setup.py install --install-layout=deb \
-            --root $(CURDIR)/debian/python-lzma; \
-	done
+# debhelper doesn't python auto-test yet, it seems.
+override_dh_auto_test: $(PYVERS:%=test%)
+	dh_auto_test
+test%:
+	python$* setup.py test
 
-override_dh_pysupport:
-	dh_pysupport
 
 %:
 	dh $@
