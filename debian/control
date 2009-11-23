@@ -12,7 +12,7 @@ Vcs-Browser: http://svn.debian.org/viewsvn/python-modules/packages/python-lzma/t
 
 Package: python-lzma
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, ${python:Depends}, liblzma0
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${python:Depends}
 Provides: ${python:Provides}
 Description: Python bindings for liblzma
  PylibLZMA provides a Python interface for the liblzma library for
