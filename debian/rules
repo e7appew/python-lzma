@@ -28,6 +28,14 @@ override_dh_auto_install:
 	dh_auto_install --destdir=debian/python-lzma/
 override_dh_strip:
 	dh_strip --dbg-package=python-lzma-dbg
+#	The _d.so files need to be moved to the -dbg package, in the
+#	same location
+	cd debian/python-lzma && find . -name '*_d.so' \
+	  -exec cp --parents {} ../../debian/python-lzma-dbg/ \; -delete
+
+	mv debian/python-lzma-dbg/usr/lib/debug/usr/lib/pyshared \
+	   debian/python-lzma-dbg/usr/lib/debug/usr/lib/pymodules
+
 # debug package can refer to docs of depended-on binary package
 override_dh_installdocs:
 	dh_installdocs
