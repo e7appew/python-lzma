@@ -23,6 +23,17 @@ override_dh_auto_test: $(PYVERS:%=test%)
 test%:
 	python$* setup.py test
 
+# Multiple binary packages, must specify which to install files into.
+override_dh_auto_install:
+	dh_auto_install --destdir=debian/python-lzma/
+override_dh_strip:
+	dh_strip --dbg-package=python-lzma-dbg
+# debug package can refer to docs of depended-on binary package
+override_dh_installdocs:
+	dh_installdocs
+	rm -rf            debian/python-lzma-dbg/usr/share/doc/python-lzma-dbg
+	ln -s python-lzma debian/python-lzma-dbg/usr/share/doc/python-lzma-dbg
+
 
 %:
 	dh $@

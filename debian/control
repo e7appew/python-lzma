@@ -18,3 +18,15 @@ Description: Python bindings for liblzma
  PylibLZMA provides a Python interface for the liblzma library for
  reading and writing data that has been compressed or can be
  decompressed by Lasse Collin's xz / lzma utils.
+
+Package: python-lzma-dbg
+Architecture: any
+Priority: extra
+Section: debug
+Depends: ${misc:Depends}, python-lzma (= ${binary:Version})
+Description: python-lzma debug symbols 
+ PylibLZMA provides a Python interface for the liblzma library for
+ reading and writing data that has been compressed or can be
+ decompressed by Lasse Collin's xz / lzma utils.
+ .
+ This package contains detached debugging symbols for python-lzma.
