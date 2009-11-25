@@ -1,0 +1,2 @@
+usr/lib/python*/*-packages/lzma.so
+usr/lib/python*/*-packages/*.egg-info
