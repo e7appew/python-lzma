@@ -1,4 +1,4 @@
-python-lzma (0.5.2-2) unstable; urgency=low
+python-lzma (0.5.2-2) experimental; urgency=low
 
   * Fix duplicate "Maintainer: " text in that field in debian/control.
   * Include the backwards-compatibility "liblzma.py" module.  This just
