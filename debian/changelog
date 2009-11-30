@@ -1,3 +1,12 @@
+python-lzma (0.5.2-2) unstable; urgency=low
+
+  * Fix duplicate "Maintainer: " text in that field in debian/control.
+  * Include the backwards-compatibility "liblzma.py" module.  This just
+    imports lzma and raises a DeprecationWarning.
+  * Remove unneeded dh_builddeb override from debian/rules.
+
+ -- Richard Darst <rkd@zgib.net>  Mon, 30 Nov 2009 13:00:45 -0500
+
 python-lzma (0.5.2-1) experimental; urgency=low
 
   * Initial release (Closes: #556451)
