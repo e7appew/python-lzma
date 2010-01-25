@@ -1,3 +1,9 @@
+python-lzma (0.5.2-3) unstable; urgency=low
+
+  * Rebuild against unstable as python2.6 has migrated to there.
+
+ -- Richard Darst <rkd@zgib.net>  Mon, 25 Jan 2010 10:19:38 -0500
+
 python-lzma (0.5.2-2) experimental; urgency=low
 
   * Fix duplicate "Maintainer: " text in that field in debian/control.
