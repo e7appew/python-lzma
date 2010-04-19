@@ -1,3 +1,10 @@
+python-lzma (0.5.3-1) unstable; urgency=low
+
+  * New upstream version
+  * Upgrade to 3.0 (quilt) just to be able to use .orig.tar.bz2
+
+ -- Richard Darst <rkd@zgib.net>  Mon, 19 Apr 2010 13:52:06 -0400
+
 python-lzma (0.5.2-3) unstable; urgency=low
 
   * Rebuild against unstable as python2.6 has migrated to there.
