@@ -1,3 +1,9 @@
+python-lzma (0.5.3-2) unstable; urgency=low
+
+  * Remove duplicated /u/s/d/{changelog,Changelog}.gz (Closes: #594943)
+
+ -- Richard Darst <rkd@zgib.net>  Mon, 30 Aug 2010 21:55:54 -0400
+
 python-lzma (0.5.3-1) unstable; urgency=low
 
   * New upstream version

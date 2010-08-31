@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
 Uploaders: Richard Darst <rkd@zgib.net>
 Build-Depends: debhelper (>= 7.0.50~), liblzma-dev, python-all-dev (>= 2.5.4-3~), python-setuptools, pkg-config, python-support, python-all-dbg (>= 2.5.4-3~)
-Standards-Version: 3.8.4
+Standards-Version: 3.9.1
 XS-Python-Version: >= 2.6
 Homepage: https://launchpad.net/pyliblzma
 Vcs-Svn: svn://svn.debian.org/python-modules/packages/python-lzma/trunk
