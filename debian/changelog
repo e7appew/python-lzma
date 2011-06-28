@@ -2,9 +2,10 @@ python-lzma (0.5.3-2) UNRELEASED; urgency=low
 
   * Remove duplicated /u/s/d/{changelog,Changelog}.gz (Closes: #594943)
   * Bump standards-version to 3.9.2
+  * Remove dh_make template from debian/watch
   * Finally package and submit for sponsoring after months.
 
- -- Richard Darst <rkd@zgib.net>  Tue, 28 Jun 2011 14:10:38 -0400
+ -- Richard Darst <rkd@zgib.net>  Tue, 28 Jun 2011 14:47:11 -0400
 
 python-lzma (0.5.3-1) unstable; urgency=low
 
