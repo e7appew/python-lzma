@@ -1,3 +1,9 @@
+python-lzma (0.5.3-3) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Richard Darst <rkd@zgib.net>  Wed, 29 Jun 2011 01:13:41 -0400
+
 python-lzma (0.5.3-2) unstable; urgency=low
 
   * Remove duplicated /u/s/d/{changelog,Changelog}.gz (Closes: #594943)
