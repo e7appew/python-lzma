@@ -21,7 +21,9 @@ clean:
 override_dh_auto_test: $(PYVERS:%=test%)
 	dh_auto_test
 test%:
+ifeq "$(filter nocheck,$(DEB_BUILD_OPTIONS))" ""
 	python$* setup.py test
+endif
 
 # Multiple binary packages, must specify which to install files into.
 override_dh_auto_install:
