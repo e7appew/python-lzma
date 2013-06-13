@@ -5,10 +5,11 @@ python-lzma (0.5.3-3) UNRELEASED; urgency=low
 
   [ Jakub Wilk ]
   * Use canonical URIs for Vcs-* fields.
-  * Fix a typo in README.Debian.
+  * Remove README.Debian; it contained only obsolete information
+    (closes: #694602). Thanks to Paul Wise for the bug report.
   * Run tests only if DEB_BUILD_OPTIONS=nocheck is not set.
 
- -- Jakub Wilk <jwilk@debian.org>  Thu, 13 Jun 2013 13:13:49 +0200
+ -- Jakub Wilk <jwilk@debian.org>  Thu, 13 Jun 2013 13:40:57 +0200
 
 python-lzma (0.5.3-2) unstable; urgency=low
 
