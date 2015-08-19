@@ -7,7 +7,7 @@
 # This special exception was added by Craig Small in version 0.37 of dh-make.
 
 # Uncomment this to turn on verbose mode.
-export DH_VERBOSE=1
+#export DH_VERBOSE=1
 
 PYVERS=$(shell pyversions -vr debian/control)
 
@@ -30,7 +30,6 @@ override_dh_auto_install:
 	dh_auto_install --destdir=debian/tmp
 override_dh_strip:
 	dh_strip --dbg-package=python-lzma-dbg
-	cd debian/*-dbg/usr/lib/debug/usr/lib && mv pyshared pymodules
 
 # debug package can refer to docs of depended-on binary package
 override_dh_installdocs:
