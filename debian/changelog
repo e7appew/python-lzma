@@ -1,4 +1,6 @@
-python-lzma (0.5.3-3) UNRELEASED; urgency=low
+python-lzma (0.5.3-3) unstable; urgency=medium
+
+  * Team upload.
 
   [ Richard Darst ]
   * NOT RELEASED YET
@@ -9,7 +11,11 @@ python-lzma (0.5.3-3) UNRELEASED; urgency=low
     (closes: #694602). Thanks to Paul Wise for the bug report.
   * Run tests only if DEB_BUILD_OPTIONS=nocheck is not set.
 
- -- Jakub Wilk <jwilk@debian.org>  Thu, 13 Jun 2013 13:40:57 +0200
+  [ Piotr Ożarowski ]
+  * Convert from dh_pysupport to dh_python2
+    - add dh-python to Build-Depends
+
+ -- Piotr Ożarowski <piotr@debian.org>  Wed, 19 Aug 2015 20:54:37 +0200
 
 python-lzma (0.5.3-2) unstable; urgency=low
 
