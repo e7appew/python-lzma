@@ -1,3 +1,14 @@
+python-lzma (0.5.3-3.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Allow "check" option to be set. (Closes: #845009)
+  * Drop -Wswitch-enum GCC option set upstream.
+  * Update Standards-Version to 3.9.8. (Closes: #796361)
+  * Don't compile with -pthread option unnecessarily.
+  * Build with thread support.
+
+ -- Carlos Maddela <e7appew@gmail.com>  Sat, 19 Nov 2016 23:23:20 +1100
+
 python-lzma (0.5.3-3) unstable; urgency=medium
 
   * Team upload.
