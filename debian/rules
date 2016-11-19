@@ -9,34 +9,14 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
-PYVERS=$(shell pyversions -vr debian/control)
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 
-clean:
-	rm -rf ./build/
-	rm -f  lzma.so
-	dh clean
+%:
+	dh $@ --with python2 --buildsystem=pybuild
 
-
-# debhelper doesn't python auto-test yet, it seems.
-override_dh_auto_test: $(PYVERS:%=test%)
-	dh_auto_test
-test%:
-ifeq "$(filter nocheck,$(DEB_BUILD_OPTIONS))" ""
-	python$* setup.py test
-endif
-
-# Multiple binary packages, must specify which to install files into.
-override_dh_auto_install:
-	dh_auto_install --destdir=debian/tmp
 override_dh_strip:
 	dh_strip --dbg-package=python-lzma-dbg
 
 # debug package can refer to docs of depended-on binary package
 override_dh_installdocs:
-	dh_installdocs
-	$(RM) -rf         debian/python-lzma-dbg/usr/share/doc/python-lzma-dbg
-	ln -s python-lzma debian/python-lzma-dbg/usr/share/doc/python-lzma-dbg
-
-
-%:
-	dh $@ --with python2
+	dh_installdocs --link-doc=python-lzma

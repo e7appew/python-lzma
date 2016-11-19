@@ -1,8 +1,8 @@
-Name: PylibLZMA
-Maintainer: Per Øyvind Karlsen <peroyvind@mandriva.org>
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Contact: Per Øyvind Karlsen <peroyvind@mandriva.org>
+Upstream-Name: PylibLZMA
 Source: http://pypi.python.org/pypi/pyliblzma
         https://launchpad.net/pyliblzma
-Format-Specification: http://svn.debian.org/wsvn/dep/web/deps/dep5.mdwn?op=file&rev=59
 
 Files: *
 Copyright: 2009, Per Øyvind Karlsen <peroyvind@mandriva.org>
