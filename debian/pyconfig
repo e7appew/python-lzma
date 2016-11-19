@@ -1,0 +1,9 @@
+#!/usr/bin/python
+
+from distutils import sysconfig
+import argparse
+
+parser = argparse.ArgumentParser(description='Return python distutils sysconfig var minus -pthread option.')
+parser.add_argument('var', metavar='VAR', type=str, nargs=1, help='var to lookup')
+args = parser.parse_args()
+print(' '.join(( opt for opt in sysconfig.get_config_var(args.var[0]).split() if opt != '-pthread' )))

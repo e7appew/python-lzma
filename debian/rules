@@ -11,6 +11,11 @@
 
 export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 
+# Ensure that we don't compile with -pthread option unnecessarily, since
+# we don't make *direct* use of it in any of our code.
+export CC = $(shell ./debian/pyconfig CC)
+export LDSHARED = $(shell ./debian/pyconfig LDSHARED)
+
 %:
 	dh $@ --with python2 --buildsystem=pybuild
 
