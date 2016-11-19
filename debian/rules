@@ -10,6 +10,7 @@
 #export DH_VERBOSE=1
 
 export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+export DEB_CFLAGS_MAINT_APPEND = -DWITH_THREAD
 
 # Ensure that we don't compile with -pthread option unnecessarily, since
 # we don't make *direct* use of it in any of our code.
