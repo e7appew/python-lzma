@@ -1,0 +1,30 @@
+From: Carlos Maddela <e7appew@gmail.com>
+Date: Sat, 19 Nov 2016 15:00:59 +1100
+Subject: Drop -Wswitch-enum GCC option set upstream.
+
+Description: Drop -Wswitch-enum GCC option set upstream.
+ This option just adds extra noise, since the upstream code relies
+ on breaking the rule.
+Author: Carlos Maddela <e7appew@gmail.com>
+Origin: vendor
+Forwarded: not-needed
+Last-Update: 2016-11-19
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+---
+ setup.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/setup.py b/setup.py
+index 2d22b64..9201fb0 100644
+--- a/setup.py
++++ b/setup.py
+@@ -41,7 +41,7 @@ for i in xrange(len(c_files)):
+     c_files[i] = os.path.join('src', c_files[i])
+ 
+ compile_args = []
+-warnflags = ['-Wall', '-Wextra', '-pedantic', '-Wswitch-enum', '-Wswitch-default']
++warnflags = ['-Wall', '-Wextra', '-pedantic', '-Wswitch-default']
+ compile_args.extend(warnflags)
+ link_args = []
+ if not subprocess.Popen('touch gnu99-test.c; gcc -std=gnu99 -E gnu99-test.c > /dev/null; rm -f gnu99-test.c',

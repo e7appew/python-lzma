@@ -1,1 +1,2 @@
 fix-check-option.patch
+drop-switch-enum-gcc-opt.patch
