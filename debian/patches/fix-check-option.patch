@@ -1,0 +1,30 @@
+From: Carlos Maddela <e7appew@gmail.com>
+Date: Sat, 19 Nov 2016 10:56:37 +1100
+Subject: Allow "check" option to be set.
+
+Description: Allow "check" option to be set.
+Author: Carlos Maddela <e7appew@gmail.com>
+Origin: vendor
+Bug: https://bugs.launchpad.net/pyliblzma/+bug/1243344
+Bug-Debian: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=845009
+Forwarded: https://code.launchpad.net/~e7appew/pyliblzma/bugfix-1243344
+Last-Update: 2016-11-19
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+---
+ src/liblzma_options.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/liblzma_options.c b/src/liblzma_options.c
+index d7da651..ff1028c 100644
+--- a/src/liblzma_options.c
++++ b/src/liblzma_options.c
+@@ -56,7 +56,7 @@ LZMA_options_get(lzma_filter filter){
+  */
+ bool
+ init_lzma_options(const char *funcName, PyObject *kwargs, lzma_filter *filters){
+-	const char *argtypes = "|iiiiiiOOsO:";
++	const char *argtypes = "|iiiiiiOOss:";
+ 	PyObject *args = NULL, *levelString = NULL, *extremeString = NULL,
+ 		 *mf_key = NULL, *mode_key = NULL;
+ 	char *myFormat = NULL, *myCheck = NULL;
